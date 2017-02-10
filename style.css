@@ -1,0 +1,30 @@
+.DivA
+{
+	width:80%;
+	background-color:white;
+	border-radius: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:Black;
+	border:10px;
+	border-style:solid
+}
+
+img
+{
+	margin-left:25px;
+	margin-right:25px;
+}
+
+.ParC
+{
+	margin-top:25px;
+	margin-left:25px;
+	margin-right:75;
+	text-align:justify;
+	font-size:150%;
+}
+
+body{
+  background: grey;
+}

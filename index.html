@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+	<TITLE>Prac 2</TITLE>
+	<SCRIPT type="text/javascript" src="prac2.js"></SCRIPT>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+<HEAD>
+<BODY>
+	<DIV class=DivA>
+		<H1 align="center">Cheap TV</H1>
+		<DIV>
+			<DIV>
+				<IMG style="float: left" src="images/tv.png"/>
+			</DIV>
+			<P class="ParC"><BR/>As a new player a new satellite TV market we aim to have the cheapest prices in the country.  Our main offering provides the consumer access to two of our channel groups for the low price of R99 per month.  This exiting offering can be ordered by filling in the form below.</P>
+		</DIV>
+
+		<DIV style="clear:left" id="FormDiv">
+			<BR/><HR width="80%"/>
+			<H4 align="center">Registration Form</H4>
+			<FORM align="center">
+				<LABEL> Name: <BR/>
+					<INPUT type="textbox" id="name"> </INPUT>
+				</LABEL><BR/><BR/>
+				<LABEL> Surname: <BR/>
+					<INPUT type="textbox" id="surname"> </INPUT>
+				</LABEL><BR/><BR/>
+				<LABEL> Packages (Select two): </BR>
+					<TABLE align="center">
+						<TR><TD><INPUT type="checkbox" id="sport" onclick="validateCheckboxes();">Sport channels</INPUT></TD></TR>
+						<TR><TD><INPUT type="checkbox" id="movie" onclick="validateCheckboxes();">Movie channels</INPUT></TD></TR>
+						<TR><TD><INPUT type="checkbox" id="series" onclick="validateCheckboxes();">Series channels</INPUT></TD></TR>
+						</TABLE>
+				</LABEL><BR/>
+				<LABEL> Contract duration (Months 1-24): <BR/>
+					<INPUT type="textbox" id="duration"> </INPUT>
+				</LABEL><BR/><BR/>
+				<INPUT type="checkbox" id="upfront">Upfront payment</INPUT><BR/><BR/>
+				<P style="color:red" id=error></P>
+				<INPUT type="button" onclick="submitForm();" value="Place order"/>
+			</FORM>
+		</DIV>
+	<DIV>
+</BODY>
+</HTML>
